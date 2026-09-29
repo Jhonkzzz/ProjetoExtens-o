@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Segurança Digital para Estudantes</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <div class="logo">Segurança Digital</div>
+    <button class="menu" onclick="document.querySelector('.links').classList.toggle('show')">☰</button>
+    <div class="links">
+      <a href="#inicio">Início</a>
+      <a href="#senhas">Senhas</a>
+      <a href="#golpes">Phishing e golpes</a>
+      <a href="#redes">Redes sociais</a>
+      <a href="#2fa">2FA</a>
+      <a href="#quiz">Quiz</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div>
+    <span class="tag">Projeto de extensão • MUNDO TECH 2026</span>
+    <h1>Segurança digital para estudantes</h1>
+    <p>Informações simples para ajudar estudantes e a comunidade acadêmica a reconhecer riscos e adotar hábitos mais seguros no ambiente digital.</p>
+    <a class="button" href="#conteudo">Aprender agora</a>
+  </div>
+</section>
+
+<section id="conteudo" class="section">
+<h2>Cuidados essenciais</h2>
+<div class="cards">
+  <article><h3>Senhas fortes</h3><p>Use senhas longas e diferentes para cada serviço. Evite informações fáceis de descobrir.</p></article>
+  <article><h3>Phishing</h3><p>Desconfie de mensagens que pedem senha, código, pagamento ou acesso urgente a uma conta.</p></article>
+  <article><h3>Dados pessoais</h3><p>Evite publicar informações pessoais desnecessárias e revise as configurações de privacidade.</p></article>
+  <article><h3>Atualizações</h3><p>Mantenha sistema operacional, navegador e aplicativos atualizados para receber correções de segurança.</p></article>
+</div>
+</section>
+
+<section id="senhas" class="section alt">
+<h2>Como criar uma senha mais segura</h2>
+<ol>
+<li>Prefira uma senha longa ou uma frase-senha.</li>
+<li>Não reutilize a mesma senha em serviços diferentes.</li>
+<li>Evite nome, data de nascimento, telefone e outras informações previsíveis.</li>
+<li>Quando possível, utilize um gerenciador de senhas.</li>
+</ol>
+</section>
+
+<section id="golpes" class="section">
+<h2>Phishing e golpes</h2>
+<p>Phishing é uma tentativa de enganar a pessoa para obter informações, instalar software malicioso ou induzir alguma ação. Antes de clicar:</p>
+<ul>
+<li>Confira o remetente e o endereço do site.</li>
+<li>Desconfie de urgência exagerada e ameaças.</li>
+<li>Não informe códigos de autenticação para terceiros.</li>
+<li>Em caso de dúvida, acesse o serviço pelo aplicativo ou site oficial, sem usar o link recebido.</li>
+</ul>
+</section>
+
+<section id="redes" class="section alt">
+<h2>Redes sociais e exposição</h2>
+<p>Antes de publicar, pense se aquela informação realmente precisa ser pública. Revise permissões de aplicativos, localização e visibilidade das publicações.</p>
+</section>
+
+<section id="2fa" class="section">
+<h2>Autenticação em dois fatores</h2>
+<p>A autenticação em dois fatores acrescenta uma segunda etapa de verificação ao login. Ative esse recurso nas contas que oferecem a opção.</p>
+</section>
+
+<section id="quiz" class="section alt">
+<h2>Quiz rápido</h2>
+<form id="quizForm">
+  <p><strong>1. Recebeu uma mensagem pedindo seu código de login com urgência. O que fazer?</strong></p>
+  <label><input type="radio" name="q1" value="a"> Enviar imediatamente</label>
+  <label><input type="radio" name="q1" value="b"> Não compartilhar e verificar pelo canal oficial</label>
+  <p><strong>2. É recomendado reutilizar a mesma senha em todas as contas?</strong></p>
+  <label><input type="radio" name="q2" value="a"> Sim</label>
+  <label><input type="radio" name="q2" value="b"> Não</label>
+  <p><strong>3. O que ajuda a proteger uma conta?</strong></p>
+  <label><input type="radio" name="q3" value="a"> Autenticação em dois fatores</label>
+  <label><input type="radio" name="q3" value="b"> Compartilhar o código de acesso</label>
+  <button class="button" type="button" onclick="corrigirQuiz()">Ver resultado</button>
+</form>
+<div id="resultado"></div>
+</section>
+</main>
+
+<footer>
+<p>Projeto de extensão • Johanat Henrique Klein • RA 60004025 • ADS • 5º período</p>
+<p>Material educativo desenvolvido para estudantes e comunidade acadêmica.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
